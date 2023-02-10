@@ -8,6 +8,7 @@ com\portfolio\nab\Security\Enums\RolNombre.class
 com\portfolio\nab\Security\Controller\AuthController.class
 com\portfolio\nab\Security\Service\RolService.class
 com\portfolio\nab\Security\Service\UsuarioService.class
+com\portfolio\nab\Dto\dtoExperiencia.class
 com\portfolio\nab\Security\Service\UserDetailsImpl.class
 com\portfolio\nab\Repository\RExperiencia.class
 com\portfolio\nab\Security\Dto\JwtDto.class
@@ -19,7 +20,6 @@ com\portfolio\nab\Service\Seducacion.class
 com\portfolio\nab\Entity\Experiencia.class
 com\portfolio\nab\Security\Repository\RolRepository.class
 com\portfolio\mgb\Dto\dtoPersona.class
-com\portfolio\mgb\Dto\dtoExperiencia.class
 com\portfolio\nab\Repository\REducacion.class
 com\portfolio\nab\Security\Repository\iUsuarioRepository.class
 com\portfolio\nab\Security\Entity\Rol.class

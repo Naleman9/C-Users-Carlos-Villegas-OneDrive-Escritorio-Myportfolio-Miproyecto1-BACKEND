@@ -1,7 +1,8 @@
 
 package com.portfolio.nab.Controller;
 
-import com.portfolio.mgb.Dto.dtoExperiencia;
+
+import com.portfolio.nab.Dto.dtoExperiencia;
 import com.portfolio.nab.Entity.Experiencia;
 import com.portfolio.nab.Security.Controller.Mensaje;
 import com.portfolio.nab.Service.SExperiencia;
@@ -23,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/explab")
-@CrossOrigin(origins = {"http://mgbfrontend.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://frontendnab.web.app","http://localhost:4200"})
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
