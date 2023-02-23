@@ -7,6 +7,7 @@ com\portfolio\nab\Security\Dto\LoginUsuario.class
 com\portfolio\nab\Security\Enums\RolNombre.class
 com\portfolio\nab\Security\Controller\AuthController.class
 com\portfolio\nab\Security\Service\RolService.class
+com\portfolio\nab\Dto\dtoPersona.class
 com\portfolio\nab\Security\Service\UsuarioService.class
 com\portfolio\nab\Dto\dtoExperiencia.class
 com\portfolio\nab\Security\Service\UserDetailsImpl.class
@@ -19,11 +20,14 @@ com\portfolio\nab\Security\Jwt\JwtEntryPoint.class
 com\portfolio\nab\Service\Seducacion.class
 com\portfolio\nab\Entity\Experiencia.class
 com\portfolio\nab\Security\Repository\RolRepository.class
-com\portfolio\mgb\Dto\dtoPersona.class
 com\portfolio\nab\Repository\REducacion.class
 com\portfolio\nab\Security\Repository\iUsuarioRepository.class
 com\portfolio\nab\Security\Entity\Rol.class
+com\portfolio\nab\Service\Shys.class
+com\portfolio\nab\Dto\dtoHys.class
+com\portfolio\nab\Entity\hys.class
 com\portfolio\nab\Security\MainSecurity.class
+com\portfolio\nab\Controller\CHys.class
 com\portfolio\nab\Security\Controller\Mensaje.class
 com\portfolio\nab\Controller\CExperiencia.class
 com\portfolio\nab\Dto\dtoEducacion.class
@@ -33,6 +37,7 @@ com\portfolio\nab\Security\Entity\UsuarioPrincipal.class
 com\portfolio\nab\Controller\CEducacion.class
 com\portfolio\nab\Controller\PersonaController.class
 com\portfolio\nab\Interface\IPersonaService.class
+com\portfolio\nab\Repository\Rhys.class
 com\portfolio\nab\Security\Dto\NuevoUsuario.class
 com\portfolio\nab\Security\Jwt\JwtTokenFilter.class
 com\portfolio\nab\Service\ImpPersonaService.class

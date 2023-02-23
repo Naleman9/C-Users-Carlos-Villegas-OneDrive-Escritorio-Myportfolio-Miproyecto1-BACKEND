@@ -1,60 +1,61 @@
 package com.portfolio.nab.Service;
 
 import com.portfolio.nab.Entity.Persona;
-import com.portfolio.nab.Interface.IPersonaService;
 import com.portfolio.nab.Repository.IPersonaRepository;
 import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ImpPersonaService implements IPersonaService {
-    @Autowired IPersonaRepository ipersonaRepository;
+@Transactional
+public class ImpPersonaService{
+    @Autowired 
+    IPersonaRepository ipersonaRepository;
 
-    @Override
+     public List<Persona> list(){
+         return ipersonaRepository.findAll();
+     }
+     
+     public Optional<Persona> getOne(int id){
+         return ipersonaRepository.findById(id);
+     }
+     
+     public Optional<Persona> getByNombre(String nombre){
+         return ipersonaRepository.findByNombre(nombre);
+     }
+     
+     public void save(Persona persona){
+         ipersonaRepository.save(persona);
+     }
+     
+     public void delete(int id){
+         ipersonaRepository.deleteById(id);
+     }
+     
+     public boolean existsById(int id){
+         return ipersonaRepository.existsById(id);
+     }
+     
+     public boolean existsByNombre(String nombre){
+         return ipersonaRepository.existsByNombre(nombre);
+     }
+
     public List<Persona> getPersona() {
-        List<Persona> persona = ipersonaRepository.findAll();
-        return persona;
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void savePersona(Persona persona) {
-        ipersonaRepository.save(persona);
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public void deletePersona(Long id) {
-        ipersonaRepository.deleteById(id);
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
     public Persona findPersona(Long id) {
-        Persona persona =ipersonaRepository.findById(id).orElse(null);
-       return persona;
-       }
-
-    public List<Persona> list() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    public void save(Persona persona) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Object getOne(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public boolean existsById(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public boolean existsByNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public Object getByNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+} 
     
-}
