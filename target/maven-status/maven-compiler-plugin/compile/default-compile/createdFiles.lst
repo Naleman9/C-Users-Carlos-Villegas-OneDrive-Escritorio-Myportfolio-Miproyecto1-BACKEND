@@ -36,7 +36,6 @@ com\portfolio\nab\Security\Entity\Usuario.class
 com\portfolio\nab\Security\Entity\UsuarioPrincipal.class
 com\portfolio\nab\Controller\CEducacion.class
 com\portfolio\nab\Controller\PersonaController.class
-com\portfolio\nab\Interface\IPersonaService.class
 com\portfolio\nab\Repository\Rhys.class
 com\portfolio\nab\Security\Dto\NuevoUsuario.class
 com\portfolio\nab\Security\Jwt\JwtTokenFilter.class

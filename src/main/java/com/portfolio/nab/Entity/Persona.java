@@ -9,18 +9,17 @@ import javax.validation.constraints.Size;
 
 
 @Entity
-public class Persona {
-    
+public class Persona { 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private int id;
     
     @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la lóngitud")
+    @Size(min = 1, max = 255, message = "No cumple con la lóngitud")
     private String nombre;
     
     @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la lóngitud")
+    @Size(min = 1, max = 255, message = "No cumple con la lóngitud")
     private String apellido;
     
     @NotNull
